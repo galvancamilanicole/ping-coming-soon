@@ -5,18 +5,27 @@ body{
 }
 
 header{
-    margin: 30px;
+    margin: 60px 30px 10px;
 }
 
-.title{
-    padding: 30px 10px 10px 10px;
-    text-transform: uppercase;
-    font-size: 1rem;
+.header-link{
+    display: block;
+    width: 20%;
+    height: 24px;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+.header-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 .subtitle{
-    font-size: 1.2rem;
-    padding: 8px;
+    font-size: 1.5rem;
+    padding: 28px 0 8px;
     font-weight: 300;
     color: hsl(0, 0%, 59%);
 }
@@ -27,9 +36,9 @@ header{
 }
 
 .text{
-    font-size: 10px;
+    font-size: 12px;
     padding: 8px;
-    font-weight: 600;
+    font-weight: 300;
     color: hsl(209, 33%, 12%);
 }
 
@@ -40,10 +49,10 @@ form{
 
 form input{
     width: 90%;
-    padding: 6px 20px 10px;
+    padding: 6px 20px;
     display: block;
     margin: auto;
-    font-size: 10px;
+    font-size: 12px;
     height: 36px;
     border-radius: 24px;
     border: 1px solid hsl(223, 100%, 88%);
@@ -60,7 +69,7 @@ form input:focus{
 
 .error-msg-invalid{
     color:hsl(354, 100%, 66%);
-    font-size: 8px;
+    font-size: 10px;
     font-style: italic;
     font-weight: 300;
 }
@@ -77,10 +86,10 @@ form button{
     border: none;
     background-color: hsl(223, 87%, 63%);
     color: #ffffff;
-    font-weight: 700;
-    font-size: 10px;
+    font-weight: 600;
+    font-size: 12px;
     height: 36px;
-    box-shadow: 0px 4px 12px 5px hsla(0, 1%, 66%, 0.355);
+    box-shadow: 0px 4px 10px 5px hsla(0, 1%, 74%, 0.355);
 }
 
 main{
@@ -109,6 +118,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 20px;
+    list-style: none;
 }
 
 .fa-brands{
@@ -130,22 +140,26 @@ footer{
     color: hsl(0, 0%, 59%);
 }
 
-@media(min-width:376px){
-    .title{
-        font-size: 1.5rem;
+@media(min-width:400px){
+    header{
+        margin-top: 80px;
     }
-
+    
     .subtitle{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .text{
-        font-size: 13px;
+        font-size: 16px;
+    }
+
+    .header-image{
+        max-width: 90px;
     }
     
-    
     form{
-        width: 40%;
+        width: 100%;
+        max-width: 780px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -162,18 +176,19 @@ footer{
     form input{
         height: 40px;
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         padding: 6px 20px 6px;
     }
 
     form input::placeholder {
-         font-size: 12px;
+         font-size: 14px;
     }
 
     form button{
         width: 24%;
         margin-top: 0;
         height: 40px;
+        font-size: 14px;
     }
 
     form button:hover{
@@ -193,10 +208,20 @@ footer{
     }
 
     .image{
-        width: 60%;
+        width: 80%;
     }
     img{
-        max-width: 50%;    
+        max-width: 600px;    
+    }
+
+    .fa-brands {    
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        margin: 4px;
+        text-align: center;
+        font-size: 20px;
+        padding: 9px;
     }
 
     .fa-brands:hover{
@@ -206,4 +231,8 @@ footer{
         border: none;
     }
 
+    .copyright{
+        font-size: 12px;
+        color: hsl(0, 0%, 59%);
+    }
 }
